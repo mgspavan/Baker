@@ -1,13 +1,13 @@
 <template>
 <div class=" header">
-  <div class="home">
+  <div id = "home-link" class="home" >
    
     <div class="container">
    <div class="logo"><img src="../assets/retina-baker3.png" alt=""></div>
-   <a href="#1" class="item">Home</a>
-   <a href="#2" class="item">Products</a>
-   <a href="#3" class="item">About</a>
-   <a href="#4" class="item">Contact</a>
+   <a href="" class="item" @click="scrollTo('home-link')">Home</a>
+   <a href="" class="item" @click="scrollTo('product-link')">Products</a>
+   <a href="" class="item" @click="scrollTo('about-link')">About</a>
+   <a href="" class="item" @click="scrollTo('contact-link')">Contact</a>
    
 </div>
 
@@ -160,8 +160,8 @@ width: 100vw;
   
 }
 .item:hover{
-    color: #fff;
-    background: rgba(255, 255, 255, 0.15);
+    color: #783b31;
+    
 }
 
 
@@ -287,11 +287,11 @@ text-align: justify;
 
 
 
-/* Float four columns side by side */
+ /* Float four columns side by side */
 .column {
   float: left;
   width: 25%;
-  padding: 0 10px;
+  padding: 20px;
 }
 
 /* Remove extra left and right margins, due to padding in columns */
@@ -313,10 +313,11 @@ text-align: justify;
 }
 
 .card h3{
-  margin-top:48px;
+  margin-top:40px;
   color: #783b31;
   font-size: 24px;
-  font-family: playfair Display;
+  font-family: 'playfair Display';
+  
 }
 
 .card p{
