@@ -6,12 +6,13 @@
     
     <h2>Our speciality - <br> traditional <br> donuts!</h2>
 
+   <p>Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl <br> suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, <br>tincidunt ut eros a, vulputate consequat odio.</p>
+
+   <button class = "contact-btn"> CONTACT US</button>
   </div>
 
-
-
-
-  </div>
+   
+ </div>
 </template>
 
 
@@ -51,7 +52,7 @@ export default {
 
 .contact-container h2{
     color:#783b31;
-    font-size :70px;
+    font-size :72px;
     line-height:80px;
     font-weight:900;
     font-family: "playfair Display";
@@ -59,5 +60,81 @@ export default {
     text-align: center;
 
 }
+
+.contact-container p {
+  color:whitesmoke;
+  text-align:center;
+  font-size: 1.3rem;
+}
+
+.contact-btn {
+  color:#ffffff;
+  background-color: #783b31;
+  border-color:transparent;
+  font-family :"Inter", Arial, Helvetica, sans-serif;
+  font-size:20px;
+  line-height:14px;
+  font-weight:600;
+  letter-spacing: 5px;
+  padding:20px;
+  border-width:0px;
+  border-radius:45px;
+  margin-top:65px;
+  margin-left: 29%;
+  vertical-align: middle;
+  width:38%;
+  text-align: center;
+  box-sizing:border-box;
+}
+
+.contact-footer{
+  vertical-align: baseline;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 20px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+ 
+  padding: 16px;
+  text-align: center;
+  
+}
+
+.card h3{
+  margin-top:40px;
+  color: #783b31;
+  font-size: 24px;
+  font-family: 'playfair Display';
+  
+}
+
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
 
 </style>
