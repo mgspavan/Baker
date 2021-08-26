@@ -327,16 +327,6 @@ text-align: justify;
  margin-top: 25px;
  
 }
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
 .btn-produce{
   margin-top: 60px;
   margin-left:40%;
@@ -355,6 +345,29 @@ text-align: justify;
  vertical-align: middle;
   
 }
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width:1025px) and (max-width: 1201px){
+.container{
+  visibility: hidden;
+}
+
+.container .logo{
+  visibility: visible;
+  margin-left:55px;
+  margin-top: 20px;
+}
+  
+}
+
 
 
 </style>

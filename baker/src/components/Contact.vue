@@ -25,7 +25,7 @@ export default {
 <style>
 
 .contact-container{
-    height: 100vh;
+    height: 90vh;
     margin-top:500px;
     padding-top:160px;
     padding-bottom:170px;
@@ -135,6 +135,18 @@ export default {
   }
 }
 
+
+@media only screen and (min-width:1025px) and (max-width: 1201px){
+
+ .contact-container h6 {
+   margin-top: 10px;
+ }
+
+ .contact-container{
+   margin-top:600px;
+   
+ }
+}
 
 
 </style>

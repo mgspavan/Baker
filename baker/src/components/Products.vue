@@ -200,5 +200,17 @@ margin-bottom:100px;
 }
 
 
+@media only screen and (min-width:1025px) and (max-width: 1201px){
+
+  .column {
+    width:30%;
+   
+  }
+  
+
+
+}
+
+
 
 </style>

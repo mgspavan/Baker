@@ -246,6 +246,16 @@ export default {
 }
 
 
+@media only screen and (min-width:1025px) and (max-width: 1201px){
+
+  .about-images img{
+    margin-top:30px;
+    width:88%;
+
+  }
+
+  
+}
 
 
 </style>
