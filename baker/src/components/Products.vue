@@ -1,6 +1,6 @@
 <template>
   <div id = "product-link" class="products-page">
-    <div class="products-container"></div>
+    <div class="products-container">
     <div class="products-header">
       <h3>WHAT WE PRODUCE ?</h3>
       <h1>
@@ -49,7 +49,7 @@
   
   
 </div>
-    
+    </div>
     </div>
 
 </template>
@@ -191,12 +191,23 @@ margin-bottom:100px;
 
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (min-width :481px) and  (max-width: 768px) {
   .column {
-    width: 100%;
+    width: 90%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+
+  .column .card img{
+  width:70%;
+  }
+
+  #product-link{
+margin-bottom: 1800px;
+  }
+
+  
+
 }
 
 
@@ -207,10 +218,39 @@ margin-bottom:100px;
    
   }
   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+.product-link {
+  position: absolute;
+  top : 0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.products-container .row-about .column{
+  width: 140%;
+  width:32%;
+  padding:0px;
+  
+}
+ .row-about{
+  width:200%;
+ 
+  margin-left: 0px;
+ 
+ }
+
+ .row-about .card{
+   position: relative;
+   max-width:140%;
+   height:auto;
+   
+ }
 
 
 }
-
-
 
 </style>

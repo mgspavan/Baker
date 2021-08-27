@@ -1,9 +1,9 @@
 <template>
-<div class=" header">
+<div class="header">
   <div id = "home-link" class="home" >
    
     <div class="container">
-   <div class="logo"><img src="../assets/retina-baker3.png" alt=""></div>
+   <div id="logo-img" class="logo"><img src="../assets/retina-baker3.png" alt=""></div>
    <a href="" class="item" @click="scrollTo('home-link')">Home</a>
    <a href="" class="item" @click="scrollTo('product-link')">Products</a>
    <a href="" class="item" @click="scrollTo('about-link')">About</a>
@@ -12,12 +12,12 @@
 </div>
 
 <div class="main">  
-   <div class =  main-left><img src="../assets/baker3-slider-icon1.png" alt=""></div> 
+   <div class =  "main-left"><img src="../assets/baker3-slider-icon1.png" alt=""></div> 
   <div class = "header-title-container">
     <h1 class = "header-title">  Taste the <br> original <span>cookies</span> </h1> 
     </div>                  
     
-     <div main-right><img src="../assets/baker3-.png" alt=""></div>
+     <div class = "main-right"><img src="../assets/baker3-.png" alt=""></div>
     
      </div >
 
@@ -90,11 +90,8 @@
 
 <script>
 export default {
-  name: 'Home',
-  props: {
-    msg: String
   }
-}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -103,14 +100,16 @@ export default {
 
 
 *{
-  margin:0;
-  padding:0;
+  margin:0px;
+  padding:0px;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
 
 .header{
-width: 100vw;
+width: 100%;
+margin-top: -6px;
+margin-left: -6px;
 
 }
 .home{
@@ -132,6 +131,7 @@ width: 100vw;
   align-items: center;
   background: #c98d83;
  
+ 
   
 }
 
@@ -147,6 +147,7 @@ width: 100vw;
   color: #fff;
   line-height: 22px;
   padding: 20px;
+  
 }
 
 .logo img{
@@ -263,6 +264,7 @@ text-align: justify;
 
 
 .produce  {
+  width: 100%;
  margin-top: 300px;
  margin-bottom: 100px;
  padding: 20px;
@@ -347,7 +349,7 @@ text-align: justify;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
   .column {
     width: 100%;
     display: block;
@@ -356,18 +358,86 @@ text-align: justify;
 }
 
 @media only screen and (min-width:1025px) and (max-width: 1201px){
+.header{
+  overflow-x:hidden;
+}
+
 .container{
   visibility: hidden;
 }
-
 .container .logo{
   visibility: visible;
   margin-left:55px;
   margin-top: 20px;
 }
+
+.column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
   
 }
 
 
 
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+.container{
+  visibility: hidden;
+}
+
+
+.main-left , .main-right{
+  visibility: hidden;
+  margin:  0 auto;
+}
+
+.header-title-container .header-title{
+  font-size: 60px;
+  width: 103%;
+  text-align: center;
+  margin-left: -10px;
+  margin-top:-80px;
+  word-break:keep-all;
+}
+
+}
+
+
+@media only screen and (min-width : 481px) and (max-width:768px){
+  .container{
+  visibility: hidden;
+}
+
+
+.main-left , .main-right{
+  visibility: hidden;
+  margin:  0 auto;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-width:320px) and (max-width:481px){
+  .container{
+  visibility: hidden;
+}
+
+
+.main-left , .main-right{
+  visibility: hidden;
+  margin:  0 auto;
+}
+
+#logo-img {
+  visibility: visible!important;
+}
+
+
+}
 </style>

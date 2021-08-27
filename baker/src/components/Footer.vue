@@ -114,7 +114,7 @@ export default {
 
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .column {
     width: 100%;
     display: block;
@@ -165,5 +165,21 @@ export default {
 
 .row-footer p {
   color: #783b31;
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+  
+
+.row-footer .column{
+  width:18%;
+  padding: 50px;
+}
+.column .card{
+  padding: 10px;
+  width: 180%;
+  padding-left: 0px;
+}
+
 }
 </style>

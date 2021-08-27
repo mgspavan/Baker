@@ -29,5 +29,32 @@ export default {
 </script>
 
 <style>
+@media only screen and (min-width:768px) and (max-width:1024px){
+  *{
+    max-width:100%;
+    height:auto;
+  }
+
+
+}
+
+
+@media only screen and (min-width:481px) and (max-width:768px){
+  *{
+    max-width:100%;
+    height:auto;
+  }
+
+  
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+  *{
+    max-width:100%;
+    height:auto;
+  }
+
+  
+}
 
 </style>

@@ -6,7 +6,7 @@
         <br>
         <br>
         <h6>ABOUT US</h6>
-    <h2>Meet the history of our <span style="color :#c98d83 "> company </span></h2>
+    <h2>Meet the history of  our <span style="color :#c98d83 "> company </span></h2>
       <p>Curabitur sed iaculis dolor - non congue ligula mi ut laoreet mollis.</p>
         </div>
         
@@ -208,7 +208,7 @@ export default {
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .column {
     width: 100%;
     display: block;
@@ -257,5 +257,33 @@ export default {
   
 }
 
+@media only screen and (min-width:769px) and (max-width : 1024px){
+
+
+  .column{
+    width:15%;
+    align-items: center;
+    margin-left:20px;
+    margin-bottom: 0px;
+  } 
+
+  
+ 
+  
+  .about-images img{
+    position: relative;
+    width:80%;
+    margin-top: 10px;
+    margin-left:9%;
+  }
+  
+}
+
+
+@media only screen and (min-width:481px) and  (max-width:768px){
+  #about-link{
+    height: 250vh;
+  }
+}
 
 </style>
